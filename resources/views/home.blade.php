@@ -13,13 +13,13 @@
         <h2>{{$computer->brand}}</h2>
         <h3>{{$computer->series}}</h3>
         <ul>
-            <li>{{$computer->screen_size}} pollici</li>
-            <li>{{$computer->resolution}}</li>
-            <li>Risoluzione: {{$computer->resolution}}</li>
-            <li>Processore: {{$computer->precessor}}</li>
-            <li>{{$computer->ram}}GB RAM</li>
-            <li>Scheda grafica: {{$computer->graphics_card}}</li>
-            <li>Prezzo: {{$computer->price}}€</li>
+            <li><strong>{{$computer->screen_size}}</strong> pollici</li>
+            <li><strong>{{$computer->resolution}}</strong></li>
+            <li>Risoluzione: <strong>{{$computer->resolution}}</strong></li>
+            <li>Processore: <strong>{{$computer->processor}}</strong></li>
+            <li><strong>{{$computer->ram}}</strong>gb RAM</li>
+            <li>Scheda grafica: <strong>{{$computer->graphics_card}}</strong></li>
+            <li>Prezzo: <strong>{{$computer->price}}</strong>€</li>
         </ul>
     @endforeach
 </body>

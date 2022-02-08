@@ -17,12 +17,12 @@ class CreateComputersTable extends Migration
             $table->id();
             $table->string('brand', 50);
             $table->string('series', 100);
-            $table->smallInteger('screen_size')->unsigned();
-            $table->string('resolution', 20);
+            $table->float('screen_size', 4, 1);
+            $table->string('resolution', 80);
             $table->string('processor', 20);
             $table->smallInteger('ram')->unsigned();
-            $table->string('memory', 20);
-            $table->string('graphics_card', 50);
+            $table->string('type_memory', 20);
+            $table->string('graphics_card', 80);
             $table->float('price', 8, 2);
             $table->timestamps();
         });
